@@ -5,19 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Fabián Concha</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 50px 0; border-bottom: 1px solid #eee; }
-        h1 { margin: 0; color: #2c3e50; }
-        .subtitle { color: #7f8c8d; font-size: 1.2em; }
-        .section { margin: 40px 0; }
-        h2 { color: #2980b9; border-bottom: 2px solid #2980b9; padding-bottom: 10px; }
-        .project { background: #f9f9f9; padding: 20px; margin-bottom: 20px; border-radius: 5px; }
-        .project h3 { margin-top: 0; }
-        .tech-stack { font-size: 0.9em; color: #e67e22; font-weight: bold; }
-        .btn { display: inline-block; background: #2980b9; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .btn:hover { background: #3498db; }
-        ul { list-style-type: none; padding: 0; }
-        .contact-links a { margin: 0 10px; color: #2980b9; text-decoration: none; font-weight: bold; }
+        /* Configuración Dark Mode */
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #e0e0e0; /* Texto claro */
+            background-color: #121212; /* Fondo muy oscuro */
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        
+        header { 
+            text-align: center; 
+            padding: 60px 0; 
+            border-bottom: 1px solid #333; 
+        }
+        
+        h1 { 
+            margin: 0; 
+            color: #ffffff; 
+            font-size: 2.5em;
+        }
+        
+        .subtitle { 
+            color: #b0b0b0; 
+            font-size: 1.2em; 
+            margin-top: 10px;
+        }
+        
+        .section { 
+            margin: 50px 0; 
+        }
+        
+        h2 { 
+            color: #64b5f6; /* Azul claro brillante */
+            border-bottom: 2px solid #64b5f6; 
+            padding-bottom: 10px; 
+            margin-bottom: 30px;
+        }
+        
+        /* Estilo de Tarjetas para Proyectos */
+        .project { 
+            background: #1e1e1e; /* Gris oscuro para las tarjetas */
+            padding: 25px; 
+            margin-bottom: 25px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Sombra suave */
+            border: 1px solid #333;
+        }
+        
+        .project h3 { 
+            margin-top: 0; 
+            color: #ffffff;
+        }
+        
+        .tech-stack { 
+            font-size: 0.9em; 
+            color: #ffb74d; /* Naranja suave */
+            font-weight: bold; 
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        /* Botones */
+        .btn-container {
+            margin-top: 15px;
+        }
+
+        .btn { 
+            display: inline-block; 
+            background: #1565c0; /* Azul medio */
+            color: white; 
+            padding: 8px 16px; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            font-size: 0.9em;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover { 
+            background: #42a5f5; /* Azul más claro al pasar el mouse */
+        }
+        
+        .btn-secondary {
+            background: #424242;
+        }
+        .btn-secondary:hover {
+            background: #616161;
+        }
+
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact-links {
+            margin-top: 20px;
+        }
+
+        .contact-links a { 
+            margin: 0 15px; 
+            color: #64b5f6; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.1em;
+        }
+        
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center; 
+            margin-top: 80px; 
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.8em; 
+            color: #777;
+        }
     </style>
 </head>
 <body>
@@ -26,8 +138,8 @@
         <h1>Fabián Concha Sifuentes</h1>
         <p class="subtitle">Computer Science | AI & Computer Vision | Backend Developer</p>
         <div class="contact-links">
-            <a href="https://github.com/Fabian2727" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/fabian-santiago-concha-sifuentes-815359290/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Fabian2727" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/fabian-santiago-concha-sifuentes-815359290/" target="_blank">LinkedIn</a>
             <a href="mailto:fabian.santiago27@gmail.com">Email</a>
         </div>
     </header>
@@ -35,9 +147,10 @@
     <div class="section">
         <h2>Sobre Mí</h2>
         <p>
-            Egresado de Ciencia de la Computación (Tercio Superior) con sólida experiencia en Python, Visión Computacional e Inteligencia Artificial.
-            Me especializo en implementar soluciones escalables, desde arquitecturas concurrentes hasta la integración de modelos generativos (LLMs).
-            Tengo experiencia en investigación (SIBGRAPI 2025) y desarrollo en la nube (AWS/GCP).
+            Egresado de Ciencia de la Computación (Tercio Superior) apasionado por resolver problemas complejos mediante algoritmos. 
+            Cuento con sólida experiencia en <strong>Python</strong>, <strong>Visión Computacional</strong> e <strong>Inteligencia Artificial</strong>.
+            Me especializo en diseñar e implementar soluciones escalables, desde la reingeniería de arquitecturas de datos masivos hasta la integración de modelos generativos (LLMs) en la nube.
+            Mi enfoque combina la investigación académica (publicación en SIBGRAPI 2025) con el desarrollo práctico en entornos AWS y GCP.
         </p>
     </div>
 
@@ -46,43 +159,74 @@
 
         <div class="project">
             <h3>Investigación: Multi-scale Diffusion for Chromatic Adaptation</h3>
-            <p class="tech-stack">Python | Image Processing | LaTeX</p>
-            <p>Autor de artículo presentado en <strong>SIBGRAPI 2025</strong>. Desarrollo de un método de difusión multiescala para suprimir artefactos de halo y mejorar la adaptación cromática en imágenes para ususarios con daltonismo.</p>
-            <a href="https://ieeexplore.ieee.org/document/11223500" class="btn" target="_blank">Ver Publicación</a>
+            <span class="tech-stack">Python | Image Processing | LaTeX | Research</span>
+            <p>
+                Autor principal de artículo presentado en la conferencia internacional <strong>SIBGRAPI 2025</strong>. 
+                Desarrollé e implementé un novedoso método matemático de difusión multiescala diseñado para corregir la adaptación cromática en imágenes digitales.
+                El algoritmo logra suprimir eficazmente los artefactos de halo comunes en estos procesos, mejorando significativamente la percepción del contraste y la accesibilidad visual para usuarios con daltonismo.
+            </p>
+            <div class="btn-container">
+                <a href="https://ieeexplore.ieee.org/document/11223500" class="btn" target="_blank">Ver Publicación</a>
+            </div>
         </div>
 
         <div class="project">
-            <h3>Storytelling Interactivo con IA</h3>
-            <p class="tech-stack">GCP | Gemini API | Serverless | Python</p>
-            <p>Diseño y programación en GCP de una aplicación serverless que integra agentes de IA y chatbots para generar historias personalizadas en tiempo real.</p>
-            <a href="https://github.com/Fabian2727" class="btn" target="_blank">Ver Código</a>
+            <h3>Storytelling Interactivo con IA (Serverless)</h3>
+            <span class="tech-stack">GCP | Gemini API | Google Cloud Functions | Python</span>
+            <p>
+                Diseño y despliegue de una arquitectura 100% serverless en Google Cloud Platform. 
+                El sistema orquesta múltiples agentes de Inteligencia Artificial (basados en Gemini API) para crear narrativas dinámicas. 
+                Gestiona el contexto de la conversación y genera respuestas personalizadas en tiempo real, demostrando un uso eficiente de recursos en la nube y manejo de LLMs.
+            </p>
+            <div class="btn-container">
+                <a href="https://github.com/Fabian2727" class="btn" target="_blank">Ver Código</a>
+                <a href="https://drive.google.com/file/d/1MKFS5voGQKjI9cGBxrO1Pi_hUmBd41iN/view?usp=sharing" class="btn btn-secondary" target="_blank">Ver Demo en Video</a>
+            </div>
         </div>
 
         <div class="project">
-            <h3>Pipeline de Ingesta de Datos (Data Vista S.A.C.)</h3>
-            <p class="tech-stack">Python | Batch Processing | SQL</p>
-            <p>Desarrollé una infraestructura de recolección de datos masiva para un motor de búsqueda.
-                Implementé un Web Crawler de alto rendimiento en Python integrado con Elasticsearch (ES) para la indexación a gran escala, utilizando FastText (NLP) y Trafilatura para automatizar 
-                el filtrado de contenido y la detección de idioma, garantizando así un repositorio de datos de alta calidad optimizado para el mercado hispanohablante.</p>
+            <h3>Pipeline de Ingesta de Datos Masiva (Data Vista S.A.C.)</h3>
+            <span class="tech-stack">Python | Elasticsearch | NLP | Batch Processing</span>
+            <p>
+                Desarrollé la infraestructura backend para la recolección de datos de un motor de búsqueda.
+                Implementé un <strong>Web Crawler de alto rendimiento</strong> integrado con Elasticsearch para la indexación a gran escala. 
+                Utilicé bibliotecas de NLP (FastText) para automatizar el filtrado de contenido y la detección de idioma, optimizando la calidad del repositorio de datos para el mercado hispanohablante y migrando procesos secuenciales a concurrentes.
+            </p>
         </div>
         
         <div class="project">
-            <h3>Detección de Objetos en Tiempo Real</h3>
-            <p class="tech-stack">AWS | YOLO | Google Vision AI</p>
-            <p>Implementación de un pipeline de video para la detección y etiquetado automático de objetos integrando servicios multi-cloud.</p>
+            <h3>Sistema de Gestión Clínica Integral</h3>
+            <span class="tech-stack">Python | HTML/Web | Seguridad | Digitalización</span>
+            <p>
+                Desarrollo completo de una plataforma web para la Clínica Odontológica Concha Asociados. 
+                El proyecto consistió en la digitalización total de la gestión de pacientes, reemplazando los expedientes físicos manuales. 
+                Se implementaron módulos para historias clínicas, seguimiento de tratamientos y seguridad de datos, resultando en una optimización operativa y mayor seguridad en la información sensible de los pacientes.
+            </p>
+            <div class="btn-container">
+                <a href="https://drive.google.com/file/d/1xIH-BHTv-UlwRT5zYM7zCkZyykDyddIH/view?usp=sharing" class="btn btn-secondary" target="_blank">Ver Demo en Video</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Detección de Objetos Multi-Cloud</h3>
+            <span class="tech-stack">AWS | YOLO | Google Vision AI | Real-time Streaming</span>
+            <p>
+                Implementación de un pipeline de video robusto para la detección y etiquetado automático de objetos. 
+                La solución integra la rapidez de inferencia local de modelos YOLO con la precisión de la API de Google Vision en la nube, orquestado todo sobre infraestructura AWS para permitir el análisis en tiempo real.
+            </p>
         </div>
     </div>
 
     <div class="section">
         <h2>Habilidades Técnicas</h2>
         <ul>
-            <li><strong>Lenguajes:</strong> Python, C++, C#, Java, SQL, JavaScript.</li>
-            <li><strong>IA & Visión:</strong> OpenCV, MediaPipe, YOLO, TensorFlow, PyTorch, Gemini API.</li>
-            <li><strong>Cloud & Tools:</strong> AWS, Google Cloud Platform, Docker, Git, FastAPI.</li>
+            <li><strong>Lenguajes de Programación:</strong> <br> Python (Avanzado), C++, C#, Java, SQL, JavaScript.</li>
+            <li><strong>Inteligencia Artificial & Visión:</strong> <br> OpenCV, MediaPipe, YOLO, TensorFlow, PyTorch, Gemini API, LLMs.</li>
+            <li><strong>Cloud & DevOps:</strong> <br> AWS, Google Cloud Platform (GCP), Docker, Git, Serverless Architecture.</li>
         </ul>
     </div>
 
-    <footer style="text-align: center; margin-top: 50px; font-size: 0.8em; color: #777;">
+    <footer>
         <p>&copy; 2025 Fabián Concha Sifuentes</p>
     </footer>
 
